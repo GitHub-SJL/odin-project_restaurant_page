@@ -1,3 +1,6 @@
+import loadHome from "../page/home";
+
+
 function createNav() {
   const nav = document.createElement("nav");
 
@@ -7,6 +10,7 @@ function createNav() {
   homeBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(homeBtn);
+    loadHome();
   });
 
   const menuBtn = document.createElement("button");

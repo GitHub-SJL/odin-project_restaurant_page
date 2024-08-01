@@ -28,7 +28,7 @@ function createHome() {
 }
 
 function loadHome() {
-  const main = document.getElementById("mian");
+  const main = document.getElementById("main");
   main.textContent = "";
   main.appendChild(createHome());
 }

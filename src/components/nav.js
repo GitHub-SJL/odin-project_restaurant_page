@@ -1,5 +1,5 @@
 import loadHome from "../page/home";
-
+import loadMenu from "../page/menu";
 
 function createNav() {
   const nav = document.createElement("nav");
@@ -19,6 +19,7 @@ function createNav() {
   menuBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(menuBtn);
+    loadMenu();
   });
 
   const contactBtn = document.createElement("button");

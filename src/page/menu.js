@@ -62,6 +62,7 @@ function createMenuItem(name, description) {
 
   menuItem.appendChild(foodImage);
   menuItem.appendChild(foodName);
+  menuItem.appendChild(englishFoodName);
   menuItem.appendChild(foodDescription);
 
   return menuItem;
